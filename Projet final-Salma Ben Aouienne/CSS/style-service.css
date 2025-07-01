@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.vision {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin: 100px;
+  align-items: end;
+}
+
+.mini-title {
+  font-weight: bold;
+  color: #003915;
+  font-size: 18px;
+}
+
+.banner-chiffres {
+  background-color: #ECF4D3;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 400px;
+  position: relative;
+}
+
+.img3 {
+  border-radius: 20px;
+  position: absolute;
+  transform: translateY(-60%);
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 220px;
+  margin-top: 120px;
+}
+
+.nbr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gamme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 50px;
+  margin: 40px 100px;
+
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card-content {
+  padding:  25px;
+}
+
+@media screen and (max-width: 1024px) {
+  .vision {
+    margin: 80px;
+    gap: 40px;
+  }
+  
+  .numbers {
+    gap: 150px;
+  }
+  
+  .service {
+    gap: 40px;
+  }
+  
+  .card {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vision {
+    grid-template-columns: 1fr;
+    margin: 40px;
+    gap: 20px;
+  }
+  
+  .banner-chiffres {
+    height: 350px;
+    margin-top: 100px;
+  }
+  
+  .numbers {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 200px;
+  }
+
+  .img3 {
+    transform: translateY(-40%);
+    width: 80%;
+  }
+  
+  .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 440px) and (min-width: 360px) {
+
+  .banner-chiffres {
+    height: 350px;
+    margin-top: 0px;
+  }
+
+  .img3 {
+    display: none;
+  }
+
+  .numbers {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 0%;
+  }
+
+  .gamme {
+    margin: 20px;
+  }
+
+  .service {
+    margin: 20px;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 100%;
+  }
+
+}
